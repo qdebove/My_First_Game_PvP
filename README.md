@@ -2,6 +2,7 @@
 
 NEWS : Now, the client side is jQuery free, so VanillaJS will not worked on all browser (for example, see http://caniuse.com/#search=event for event...).
 26/03/17 NEWS bis : Server side refactored thanks to typescript (and so POO). 
+25/04/17 : FINALLY WebSocket are ready thanks to socket.io !!!
 
 # My First Game
 
@@ -100,11 +101,11 @@ URL's are :
 * For PvP => http://another-mirai.herokuapp.com/
 * For PvE => http://another-mirai-pve.herokuapp.com/
 
-Next task : socket.io for multi-player (the actual PvP is using awfull pollying and all inconvenients...).
+WebSocket are ready so no longer awfull pollying...
 
 ## VI version
 
-No versioning is used, so I'll say that this is the 2.0 of this game, but the online games are not using this version.
+No versioning is used, so I'll say that this is the 2.4 of this game, but the online games are not using this version.
 
 ## VII Thanks
 
