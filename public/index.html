@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Règles du jeux</title>
+  </head>
+
+  <body>
+    <div class="mainContent">
+      <section class="handOpponent"></section>
+
+      <section class="plateau">
+        
+        <aside class="pioches">
+
+          <figure class="pioche">
+            
+            <figcaption>
+              <img src="./images/verso_carte.jpg">
+              <p>Cartes restantes</p>
+              </figcaption>
+
+          </figure>
+
+          <figure class="cimetiere">
+            <p>Cliquez ici pour voir la défausse</p>
+          </figure>
+
+        </aside>
+
+        <main class="areaOfGame"></main>
+
+        <aside class="scoreAndEffect">
+
+          <div class="playerScore">
+            <h1>Joueur</h1>
+            <p>0</p>
+          </div>
+
+          <div class="opponentScore">
+            <h1>Opponent</h1>
+            <p>0</p>
+          </div>
+
+          <div class="playerEffect">
+            <h2>Effet en cours pour le joueur</h2>
+            <p>0</p>
+          </div>
+
+          <div class="opponentEffect">
+            <h2>Effet en cours pour l'adversaire</h2>
+            <p>0</p>
+          </div>
+
+        </aside>
+
+      </section>
+
+      <section class="handplayer"></section>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

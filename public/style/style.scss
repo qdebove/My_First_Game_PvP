@@ -1,0 +1,143 @@
+@mixin flex($justify, $alignItem, $wrap, $textAlign) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignItem;
+    flex-wrap: $wrap;
+    text-align: $textAlign;
+}
+
+@mixin backgroundColor($color) {
+    background-color: $color;
+}
+
+%handMargin {
+    margin: 25px 15% 50px 15%;
+}
+
+%mainMinHeight {
+    min-height: 60vh;
+}
+
+%otherMinHeight {
+    min-height: 15vh;
+}
+
+%resetPadMar {
+    padding: 0;
+    margin: 0;
+}
+
+%border {
+    border: 2px solid black;
+}
+
+.mainContent {
+    box-sizing: border-box;
+    max-width: 1680px;
+    @extend %resetPadMar;
+
+    .handOpponent {
+        background-color: blue;
+        @extend %otherMinHeight;
+        @extend %handMargin;
+        @include flex(space-between, initial, nowrap, initial);
+    }
+
+    .plateau {
+        @extend %mainMinHeight;
+        @include flex(space-between, initial, nowrap, initial);
+
+        .pioches {
+            background-color: #ffcccc;
+            width: 15%;
+            @extend %otherMinHeight;
+            @include flex(center, initial, wrap, initial);
+
+            figure {
+                background-color: yellow;
+                @extend %border;
+                @extend %otherMinHeight;
+                @include flex(center, center, wrap, center);
+
+            }
+
+            .discard {
+                position: fixed;
+                overflow-x: scroll;
+                top: 20%;
+                left: 11%;
+                width: 100%;
+                @extend %otherMinHeight;
+                @include flex(flex-start, null, nowrap, null);
+}
+        }
+
+        .areaOfGame {
+            background-color: red;
+            width: 70%;
+            @extend %mainMinHeight;
+            @include flex(space-between, center, wrap, initial);
+        }
+
+        .scoreAndEffect {
+            background-color: #cc3300;
+            width: 15%;
+            @extend %mainMinHeight;
+            @include flex(center, flex-start, wrap, center);
+
+            .playerScore, .opponentScore {
+                width: auto;
+                margin : 0;
+                font-size: 20px;
+                @extend %border;
+            }
+
+            .playerEffect, .opponentEffect {
+                @extend %border;
+            }
+        }    
+    }
+
+    .handplayer {
+        background-color: blue;
+        @extend %otherMinHeight;
+        @extend %handMargin;
+        @include flex(space-between, initial, nowrap, initial);
+    }
+}
+
+.preview {
+  position: fixed;
+  left: calc(50% - 113px);
+  bottom: calc(50% - 156px);
+  width: 226px;
+  @extend %border;
+  @include backgroundColor(white);
+}
+
+.description {
+    @extend %border;
+    @include backgroundColor(white);
+}
+
+.hide {
+    display: none;
+}
+
+.action {
+    @extend %border;
+    @include flex(space-between, initial, nowrap, initial);
+
+    .disablePreview {
+        border: 1px solid black;
+        @extend %border;
+        @extend %resetPadMar;
+    }
+
+    .play {
+        border: 1px solid black;
+        @extend %border;
+        @extend %resetPadMar;
+    }
+}
+

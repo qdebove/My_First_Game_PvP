@@ -1,0 +1,31 @@
+{
+  "name": "debove",
+  "version": "1.0.0",
+  "description": "api pvb",
+  "main": "api1.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "curl": "^0.1.4",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api1.js"
+  },
+  "author": "Quentin DEBOVE",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qdebove/My_First_Game.git"
+  },
+  "keywords": [
+    "game",
+    "card_game",
+    "battle_card_game"
+  ],
+  "bugs": {
+    "url": "https://github.com/qdebove/My_First_Game/issues"
+  },
+  "homepage": "https://github.com/qdebove/My_First_Game#readme"
+}

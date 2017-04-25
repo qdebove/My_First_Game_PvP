@@ -1,0 +1,109 @@
+.mainContent .handOpponent, .mainContent .handplayer {
+  margin: 25px 15% 50px 15%; }
+
+.mainContent .plateau, .mainContent .plateau .areaOfGame, .mainContent .plateau .scoreAndEffect {
+  min-height: 60vh; }
+
+.mainContent .handOpponent, .mainContent .plateau .pioches, .mainContent .plateau .pioches figure, .mainContent .plateau .pioches .discard, .mainContent .handplayer {
+  min-height: 15vh; }
+
+.mainContent, .action .disablePreview, .action .play {
+  padding: 0;
+  margin: 0; }
+
+.mainContent .plateau .pioches figure, .mainContent .plateau .scoreAndEffect .playerScore, .mainContent .plateau .scoreAndEffect .opponentScore, .mainContent .plateau .scoreAndEffect .playerEffect, .mainContent .plateau .scoreAndEffect .opponentEffect, .preview, .description, .action, .action .disablePreview, .action .play {
+  border: 2px solid black; }
+
+.mainContent {
+  box-sizing: border-box;
+  max-width: 1680px; }
+  .mainContent .handOpponent {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-wrap: nowrap;
+    text-align: initial; }
+  .mainContent .plateau {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-wrap: nowrap;
+    text-align: initial; }
+    .mainContent .plateau .pioches {
+      background-color: #ffcccc;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: initial;
+      flex-wrap: wrap;
+      text-align: initial; }
+      .mainContent .plateau .pioches figure {
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center; }
+      .mainContent .plateau .pioches .discard {
+        position: fixed;
+        overflow-x: scroll;
+        top: 20%;
+        left: 11%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap; }
+    .mainContent .plateau .areaOfGame {
+      background-color: red;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: initial; }
+    .mainContent .plateau .scoreAndEffect {
+      background-color: #cc3300;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      text-align: center; }
+      .mainContent .plateau .scoreAndEffect .playerScore, .mainContent .plateau .scoreAndEffect .opponentScore {
+        width: auto;
+        margin: 0;
+        font-size: 20px; }
+  .mainContent .handplayer {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-wrap: nowrap;
+    text-align: initial; }
+
+.preview {
+  position: fixed;
+  left: calc(50% - 113px);
+  bottom: calc(50% - 156px);
+  width: 226px;
+  background-color: white; }
+
+.description {
+  background-color: white; }
+
+.hide {
+  display: none; }
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  flex-wrap: nowrap;
+  text-align: initial; }
+  .action .disablePreview {
+    border: 1px solid black; }
+  .action .play {
+    border: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */
